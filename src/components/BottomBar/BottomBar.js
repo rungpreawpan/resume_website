@@ -34,15 +34,15 @@ function BottomBar() {
         }}
       >
         <Box sx={{ alignItems: 'center', justifyContent: 'center' }}>
-          <Typography sx={{ ...titleStyle }}>Call</Typography>
+          <Typography sx={{ ...titleStyle }}>Phone</Typography>
           <Typography>(+66) 80-953-7819</Typography>
         </Box>
         <Box>
-          <Typography sx={{ ...titleStyle }}>Write</Typography>
+          <Typography sx={{ ...titleStyle }}>Email</Typography>
           <Typography>siri.preawpan@gmail.com</Typography>
         </Box>
         <Box>
-          <Typography sx={{ ...titleStyle }}>Follow</Typography>
+          <Typography sx={{ ...titleStyle }}>Follow me</Typography>
           <Box>
             {followIcon.map((follow) => {
               return (

@@ -27,7 +27,6 @@ function ContactContent() {
       <Button
         disableElevation
         disableRipple
-        disableFocusRipple
         color="inherit"
         variant="contained"
         sx={{ backgroundColor: '#d0d0d0' }}

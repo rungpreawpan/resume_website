@@ -1,16 +1,30 @@
-import DrawerAppBar from './components/AppBar/AppBar';
-import { Box, Divider, Typography, Grid } from '@mui/material';
-import BottomBar from './components/BottomBar/BottomBar';
+import Home from './pages/Home/Home';
+import Resume from './pages/Resume/Resume';
+import Projects from './pages/Projects/Projects';
+import Contact from './pages/Contact/Contact';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Box sx={{ minHeight: '100vh' }}>
-      <DrawerAppBar />
-      <Box sx={{ py: 10, px: { xs: 3, sm: 5, md: 10, xl: 20 } }}>
-        <Typography>Home</Typography>
-      </Box>
-      <BottomBar />
-    </Box>
+    <Routes>
+      <Route path="/" index={true} element={<Home />} />
+      <Route path="resume" index={true} element={<Resume />} />
+      <Route path="projects" index={true} element={<Projects />} />
+      <Route path="contact" index={true} element={<Contact />} />
+      {/* <Route path="/">
+        <Route index={true} element={<Home />} />
+      </Route>
+      <Route path="resume">
+        <Route index={true} element={<Resume />} />
+      </Route>
+      <Route path="projects">
+        <Route index={true} element={<Projects />} />
+      </Route>
+      <Route path="contact">
+        <Route index={true} element={<Contact />} />
+      </Route> */}
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
   );
 }
 

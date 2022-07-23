@@ -20,16 +20,21 @@ const drawerWidth = 240;
 const navItems = [
   {
     id: 0,
+    navTitle: 'Home',
+    navPath: `/`,
+  },
+  {
+    id: 1,
     navTitle: 'Resume',
     navPath: `resume`,
   },
   {
-    id: 1,
+    id: 2,
     navTitle: 'Projects',
     navPath: `projects`,
   },
   {
-    id: 2,
+    id: 3,
     navTitle: 'Contact',
     navPath: `contact`,
   },

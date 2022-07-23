@@ -2,17 +2,17 @@ import React from 'react';
 import { Box, Divider, IconButton, Typography } from '@mui/material';
 import { LinkedIn, GitHub } from '@mui/icons-material';
 
-function BottomBar() {
+function Footer() {
   const followIcon = [
     {
       id: 0,
       icon: <LinkedIn />,
-      link: '1',
+      link: 'https://github.com/rungpreawpan',
     },
     {
       id: 1,
       icon: <GitHub />,
-      link: '2',
+      link: 'https://www.linkedin.com/in/preawpan-siriphalangkanont-3781791ba',
     },
   ];
 
@@ -46,7 +46,11 @@ function BottomBar() {
           <Box>
             {followIcon.map((follow) => {
               return (
-                <IconButton key={follow.id} sx={{ color: 'black' }}>
+                <IconButton
+                  key={follow.id}
+                  sx={{ color: 'black' }}
+                  href={follow.link}
+                >
                   {follow.icon}
                 </IconButton>
               );
@@ -58,4 +62,4 @@ function BottomBar() {
   );
 }
 
-export default BottomBar;
+export default Footer;
